@@ -9,26 +9,36 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="驾驶行为记录器"
+        android:text="Driving Behavior Recorder"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:textColor="#2196F3" />
 
     <TextView
         android:id="@+id/tv_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="准备开始记录"
+        android:text="Ready to start recording"
         android:textSize="18sp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:textColor="#666666" />
+
+    <TextView
+        android:id="@+id/tv_sensor_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detecting available sensors..."
+        android:textSize="12sp"
+        android:background="#E3F2FD"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btn_start"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:text="开始记录"
+        android:text="Start Recording"
         android:textSize="18sp"
         android:backgroundTint="#4CAF50"
         android:textColor="@android:color/white"
@@ -38,11 +48,21 @@
         android:id="@+id/btn_stop"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:text="停止记录"
+        android:text="Stop Recording"
         android:textSize="18sp"
         android:backgroundTint="#f44336"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_send_data"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Send Data via Email"
+        android:textSize="16sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
 
     <View
         android:layout_width="match_parent"
@@ -53,7 +73,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="传感器数据"
+        android:text="Sensor Data"
         android:textSize="16sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp" />
@@ -69,7 +89,7 @@
             android:id="@+id/tv_sensor_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="传感器数据将在这里显示..."
+            android:text="Sensor data will be displayed here..."
             android:textSize="14sp"
             android:fontFamily="monospace"
             android:textColor="#333333" />
